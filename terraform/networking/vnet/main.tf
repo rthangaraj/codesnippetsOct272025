@@ -1,10 +1,5 @@
 
-# DDOS Plan
-resource "azurerm_network_ddos_protection_plan" "ddos" {
-  name                = var.ddos_protection_plan_name
-  location            = var.rg_location
-  resource_group_name = var.hubvnet_resource_group_name
-}
+
 
 resource "azurerm_virtual_network" "vnet" {
   for_each            = var.vnets
