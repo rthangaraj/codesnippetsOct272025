@@ -10,10 +10,7 @@ resource "azurerm_virtual_network" "vnet" {
   tags = {
     environment = "Test"
   }
-  ddos_protection_plan {
-    id     = azurerm_network_ddos_protection_plan.ddos.id
-    enable = var.ddos_protection_plan_enabled
-  }
+  
 }
 
 resource "azurerm_subnet" "subnet" {
