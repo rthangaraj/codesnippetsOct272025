@@ -45,5 +45,8 @@ the locals will be flattened for the test-vnet like,
 }
 
 
+NOTE:
+DDOS protection plan, NSG, network watcher, service endpoints are out of scope to this module.
+
 
 
