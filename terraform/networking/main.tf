@@ -3,7 +3,7 @@ provider "azurerm" {
 }
 
 module "vnet" {
-  source = "./modules/vnet"
+  source = "./vnet"
   vnets  = var.vnets
 
 
